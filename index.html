@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slider / Carousel</title>
+  <title>Les dropdowns</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -17,26 +17,29 @@
 <section class="p-5 text-center">
 
   <section class="p-5 text-center">
-    <h1 class="mb-5">Les <b class="text-danger">sliders</b></h1>
+    <h1 class="mb-5">Les <b class="text-danger">dropdown</b></h1>
     
-    <a href="#spoilerB" data-toggle="collapse">
-      Afficher
-    </a>
-    
-      <button class="btn btn-primary" data-toggle="collapse" data-target=".spoiler-example">
-      Afficher
-    </button>
-    
-    
-    <div id="spoilerA" class="collapse spoiler-example">
-      <div class="card card-body">
-        Le texte du spoiler premier.
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+        Options
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Contact</a>
+        <a class="dropdown-item" href="#">Liens</a>
       </div>
     </div>
     
-      <div id="spoilerB" class="collapse spoiler-example">
-      <div class="card card-body">
-        Le texte du spoiler second.
+      <div class="btn-group mt-3">
+      <button class="btn btn-secondary">
+        Envoyer
+      </button>
+      <button class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+        </button>
+         <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Contact</a>
+        <a class="dropdown-item" href="#">Liens</a>
       </div>
     </div>
 
