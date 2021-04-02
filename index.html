@@ -19,41 +19,27 @@
   <section class="p-5 text-center">
     <h1 class="mb-5">Les <b class="text-danger">sliders</b></h1>
     
-    <div class="carousel slide" data-ride="carousel" id="carouselExample">
-      <!-- indicateurs pour changer de photo sur l'image (petit trait)-->
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExample" data-slide-to="1"></li>
-      </ol>
-  
-      
-      <!-- regroupe l'ensemble des slides -->
-      <div class="carousel-inner">
-        <!-- 1e img classe active -->
-        <div class="carousel-item active">
-          <img src="https://believemy.com/uploads/b9a6e350c6dac727cb1bea1e409a6ca7_4772a96fb65c2b51699aa5921e903241.jpeg" alt="Arc de triomphe" class="d-block w-100" /> 
-           <!-- texte sur image -->
-          <div class="carousel-caption">
-            <h5>Paris</h5>
-            <p>Arc de triomphe</p>
-          </div>
-        </div>
-        
-        <div class="carousel-item">
-          <img src="https://believemy.com/uploads/9b212df3fd2cce5acca0d0f12bb2d948_e06fb964687e00047e534f42f0c01b95.jpeg" alt="Tour eiffel" class="d-block w-100" />
-        </div>
+    <a href="#spoilerB" data-toggle="collapse">
+      Afficher
+    </a>
+    
+      <button class="btn btn-primary" data-toggle="collapse" data-target=".spoiler-example">
+      Afficher
+    </button>
+    
+    
+    <div id="spoilerA" class="collapse spoiler-example">
+      <div class="card card-body">
+        Le texte du spoiler premier.
       </div>
-  
-      <!-- boutons previous et next -->
-      <a class="carousel-control-prev" data-slide-to="prev" href="#carouselExample">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      
-      <a class="carousel-control-next" data-slide="next" href="#carouselExample">
-        <span class="carousel-control-next-icon"></span>
-      </a>
-      
     </div>
+    
+      <div id="spoilerB" class="collapse spoiler-example">
+      <div class="card card-body">
+        Le texte du spoiler second.
+      </div>
+    </div>
+
   </section>
   
 </section>
